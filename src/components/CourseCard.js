@@ -1,7 +1,10 @@
 const CourseCard = (props) => {
   return (
     <>
-      <p>This is Course card</p>
+      <p>{props.name}</p>
+      <p>{props.grd}</p>
+      <p>{props.crd}</p>
+      <button onClick = {() =>props.del(props.name)} > x </button>
     </>
   );
 };
